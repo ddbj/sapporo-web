@@ -11,7 +11,7 @@
         <template v-else>{{ `Run id: ${runId} does not exist.` }}</template>
       </v-container>
     </v-main>
-    <app-footer />
+    <!-- <app-footer /> -->
   </v-app>
 </template>
 
@@ -21,7 +21,7 @@ import Vue from 'vue'
 import { MyWindow } from '@/plugins/localStorage'
 import { Run } from '@/store/runs'
 import AppBar from '@/components/AppBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
+// import AppFooter from '@/components/AppFooter.vue'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import InfoCard from '@/components/runs/InfoCard.vue'
 import LogCard from '@/components/runs/LogCard.vue'
@@ -47,7 +47,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
 > = {
   components: {
     AppBar,
-    AppFooter,
+    // AppFooter,
     Breadcrumbs,
     InfoCard,
     LogCard,

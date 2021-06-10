@@ -40,7 +40,6 @@
         </v-card>
       </v-container>
     </v-main>
-    <app-footer />
   </v-app>
 </template>
 
@@ -48,7 +47,6 @@
 import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
 import Vue from 'vue'
 import AppBar from '@/components/AppBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
 
 type Data = Record<string, unknown>
 
@@ -73,7 +71,6 @@ const options: ThisTypedComponentOptionsWithRecordProps<
 > = {
   components: {
     AppBar,
-    AppFooter,
   },
 
   computed: {

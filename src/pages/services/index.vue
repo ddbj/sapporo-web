@@ -14,7 +14,7 @@
         }}</template>
       </v-container>
     </v-main>
-    <app-footer />
+    <!-- <app-footer /> -->
   </v-app>
 </template>
 
@@ -23,7 +23,7 @@ import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
 import Vue from 'vue'
 import { MyWindow } from '@/plugins/localStorage'
 import AppBar from '@/components/AppBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
+// import AppFooter from '@/components/AppFooter.vue'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import InfoCard from '@/components/services/InfoCard.vue'
 import RunCard from '@/components/services/RunCard.vue'
@@ -49,7 +49,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
 > = {
   components: {
     AppBar,
-    AppFooter,
+    // AppFooter,
     Breadcrumbs,
     InfoCard,
     RunCard,
