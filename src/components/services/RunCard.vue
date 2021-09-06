@@ -17,7 +17,7 @@
       <div class="mx-12">
         <span
           :style="{ fontSize: '1rem' }"
-          v-text="'The executed run does not exist.'"
+          v-text="'Executed runs will show up here.'"
         />
       </div>
     </div>
@@ -74,7 +74,7 @@
         @click.stop="deleteDialogShow = true"
       >
         <v-icon class="mr-2" v-text="'mdi-trash-can-outline'" />
-        <span v-text="'Delete'" />
+        <span v-text="'Remove'" />
       </v-btn>
     </div>
 
