@@ -15,3 +15,7 @@
 font {
   color: #424242;
 }
+
+#DDBJ_CommonHeader ul {
+  list-style: none;
+}

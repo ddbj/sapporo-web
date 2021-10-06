@@ -1,8 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-app>
-    <app-bar />
+    <script
+      id="DDBJ_common_framework"
+      defer
+      src="https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js"
+      type="text/javascript"
+    />
     <v-main class="background">
+      <app-bar />
       <v-container fluid>
         <breadcrumbs-header />
         <template v-if="existRunId">
@@ -12,7 +18,7 @@
         <template v-else>{{ `Run id: ${runId} does not exist.` }}</template>
       </v-container>
     </v-main>
-    <app-footer />
+    <!-- <app-footer /> -->
   </v-app>
 </template>
 
@@ -21,7 +27,7 @@ import { defineComponent } from 'vue'
 import { MyWindow } from '@/plugins/localStorage'
 import { Run } from '@/store/runs'
 import AppBar from '@/components/AppBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
+// import AppFooter from '@/components/AppFooter.vue'
 import BreadcrumbsHeader from '@/components/BreadcrumbsHeader.vue'
 import InfoCard from '@/components/runs/InfoCard.vue'
 import LogCard from '@/components/runs/LogCard.vue'
@@ -29,7 +35,7 @@ import LogCard from '@/components/runs/LogCard.vue'
 export default defineComponent({
   components: {
     AppBar,
-    AppFooter,
+    // AppFooter,
     BreadcrumbsHeader,
     InfoCard,
     LogCard,

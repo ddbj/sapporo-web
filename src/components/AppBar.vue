@@ -1,8 +1,8 @@
 <template>
-  <v-app-bar absolute app :color="$colors.indigo.darken1" dense>
+  <v-app-bar color="#E99523" dense elevation="4" tag="div">
     <v-toolbar-title>
       <nuxt-link class="white--text text-decoration-none" to="/">
-        <img alt="logo" class="mt-2" height="48" src="~/assets/logo.svg" />
+        DDBJ Workflow Execution Service
       </nuxt-link>
     </v-toolbar-title>
     <v-spacer />

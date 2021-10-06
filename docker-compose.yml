@@ -6,7 +6,7 @@ services:
     environment:
       - NUXT_HOST=0.0.0.0
       - NUXT_PORT=1121
-      # - SAPPORO_URL_PREFIX=/prefix/
+      - SAPPORO_URL_PREFIX=/wes/
       # - SAPPORO_LOAD_PRE_REGISTERED_SERVICES=true # true or false
     ports:
       - 0.0.0.0:1121:1121

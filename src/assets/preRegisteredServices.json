@@ -1,6 +1,6 @@
 [
   {
-    "name": "Pre-registered Service",
-    "endpoint": "http://localhost:1122"
+    "name": "NIG Super Computer System",
+    "endpoint": "https://ddbj.nig.ac.jp/ga4gh/wes/v1"
   }
 ]

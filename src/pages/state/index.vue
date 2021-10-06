@@ -1,8 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <v-app>
-    <app-bar />
+    <script
+      id="DDBJ_common_framework"
+      defer
+      src="https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js"
+      type="text/javascript"
+    />
     <v-main class="background">
+      <app-bar />
       <v-container fluid>
         <v-card class="mx-auto" max-width="1200">
           <div class="d-flex flex-column mx-6 py-4">
@@ -41,19 +47,16 @@
         </v-card>
       </v-container>
     </v-main>
-    <app-footer />
   </v-app>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import AppBar from '@/components/AppBar.vue'
-import AppFooter from '@/components/AppFooter.vue'
 
 export default defineComponent({
   components: {
     AppBar,
-    AppFooter,
   },
 
   computed: {
