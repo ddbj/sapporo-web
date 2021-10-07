@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="#E99523" app elevation="8" absolute>
+  <v-app-bar color="#E99523" elevation="4" tag="div" dense>
     <v-toolbar-title>
       <nuxt-link class="white--text text-decoration-none" to="/">
         DDBJ Workflow Execution Service

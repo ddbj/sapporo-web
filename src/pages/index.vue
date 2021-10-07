@@ -1,13 +1,18 @@
 <template>
   <v-app>
-    <app-bar />
+    <script
+      id="DDBJ_common_framework"
+      defer
+      src="https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js"
+      type="text/javascript"
+    />
     <v-main class="background">
+      <app-bar />
       <v-container fluid>
         <breadcrumbs />
         <service-card class="mx-auto mb-4" />
       </v-container>
     </v-main>
-    <!-- <app-footer /> -->
   </v-app>
 </template>
 
@@ -16,7 +21,6 @@ import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
 import Vue from 'vue'
 import { MyWindow } from '@/plugins/localStorage'
 import AppBar from '@/components/AppBar.vue'
-// import AppFooter from '@/components/AppFooter.vue'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import ServiceCard from '@/components/index/ServiceCard.vue'
 
@@ -37,7 +41,6 @@ const options: ThisTypedComponentOptionsWithRecordProps<
 > = {
   components: {
     AppBar,
-    // AppFooter,
     Breadcrumbs,
     ServiceCard,
   },

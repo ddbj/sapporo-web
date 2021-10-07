@@ -1,7 +1,13 @@
 <template>
   <v-app>
-    <app-bar />
+    <script
+      id="DDBJ_common_framework"
+      defer
+      src="https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js"
+      type="text/javascript"
+    />
     <v-main class="background">
+      <app-bar />
       <v-container fluid>
         <breadcrumbs />
         <template v-if="existWorkflowId">

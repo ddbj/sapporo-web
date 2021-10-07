@@ -19,14 +19,6 @@ const config: NuxtConfig = {
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
       { rel: 'icon alternate', type: 'image/png', href: '/favicon.png' },
     ],
-    script: [
-      {
-        type: 'text/javascript',
-        src: 'https://www.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js',
-        id: 'DDBJ_common_framework',
-        defer: true,
-      },
-    ],
   },
   loading: { color: '#fff' },
   css: ['~/assets/common.css'],
@@ -49,7 +41,7 @@ const config: NuxtConfig = {
     theme: {
       themes: {
         light: {
-          primary: colors.grey.darken4,
+          primary: colors.indigo.darken4,
           secondary: colors.teal.darken4,
           info: colors.grey.darken4,
           error: colors.red.darken4,
