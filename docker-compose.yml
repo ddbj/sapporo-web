@@ -1,21 +1,18 @@
 version: '3.5'
 services:
   app:
-    image: ghcr.io/sapporo-wes/sapporo-web:1.2.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sapporo-web
     container_name: sapporo-web
     environment:
       - NUXT_HOST=0.0.0.0
       - NUXT_PORT=1121
       - SAPPORO_URL_PREFIX=/wes/
-      # - SAPPORO_LOAD_PRE_REGISTERED_SERVICES=true # true or false
+      - SAPPORO_LOAD_PRE_REGISTERED_SERVICES=true # true or false
     ports:
       - 0.0.0.0:1121:1121
     restart: on-failure
     working_dir: /app
     command: [ 'npm', 'run', 'start' ]
-    networks:
-      - sapporo
-
-networks:
-  sapporo:
-    name: sapporo-network
